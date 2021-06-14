@@ -1,5 +1,30 @@
 {extends file='layout.tpl'}
 {block name=title}Personal Details{/block}
+{block name=term}
+    <div class="modal modal-blur fade" id="modal-term" tabindex="-1" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title hr-text hr-text-center ">Term of Use Zoom Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi beatae delectus deleniti dolorem eveniet facere fuga iste nemo nesciunt nihil odio perspiciatis, quia quis reprehenderit sit tempora totam unde.
+                        
+                        <label class="form-check mt-3">
+                            <input type="checkbox" class="form-check-input" id="rterm"/>
+                            <span class="form-check-label required">I agree to the Terms & Conditions</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-sm" id="accept">Accept</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{/block}
 {block name=content}
     <div class="card-body py-4">
         <h1 class="text-center">Zoom Account License Request Form</h1>

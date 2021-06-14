@@ -89,6 +89,7 @@
                 </div>
             </div>
         </form>
+        {block name=term}{/block} 
         <div class="page page-center">
             <div class="container-tight py-4">
                 <div class="text-center mb-1">
@@ -168,6 +169,18 @@
             $('#modal-preview').on('hidden.bs.modal', function () {
                 $("#form").trigger( "reset" );
             })
+            
+            $('#accept').on('click', function() {
+                if ($("#rterm").is(":checked")) {
+                    $('#modal-term').modal('toggle');
+                } else {
+                    alert("Please check the term & condition.")
+                }
+            })
+
+            $(document).ready(function() {
+                $('#modal-term').modal('show');
+            });
         </script>
     </body>
 </html>
