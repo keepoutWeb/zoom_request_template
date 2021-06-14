@@ -1,5 +1,5 @@
 <?php
-    require_once('smarty-3.1.39/libs/Smarty.class.php');
+    require_once('vendor/smarty/smarty/libs/Smarty.class.php');
 
     $smarty = new Smarty();
     $smarty->template_dir = 'views';
