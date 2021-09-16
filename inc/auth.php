@@ -1,7 +1,7 @@
 <?php
 // init configuration
-$clientID = '984225552329-itmrkdi8aa88r133ohs36iof775pck0p.apps.googleusercontent.com';
-$clientSecret = '5rgld6Nb8-9Cl9XENCg5iFMM';
+$clientID = CLIENT_ID;
+$clientSecret = CLIENT_SECRET;
 $redirectUri = URI.'?a=auth';
 
 // create Client Request to access Google API
