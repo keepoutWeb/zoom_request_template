@@ -3,9 +3,6 @@
 {block name=content}
     <div class="card-body py-4">
         <h1 class="text-center">Zoom Account License Request Form</h1>
-        <p class="text-muted">Your email will be recorded when you submit this form</p>
-        <p class="text-muted">Not email@cbsua.edu.ph? Switch account</p>
-        <p class="text-red">*Required</p>
     </div>
     <div class="hr-text hr-text-center hr-text-spaceless">Meeting/Activity details</div>
     <div class="card-body">
@@ -21,13 +18,27 @@
             </div>
         </div>
         <div class="mb-3">
-            <label class="form-label">Date <span class="text-red">*</span></label>
+            <label class="form-label">Date From <span class="text-red">*</span></label>
             <div class="input-group input-group-flat">
                 <input id="date_picker" name="date_picker" readonly/>
                 <script>
                     let do_today, do_datepicker;
                     do_today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
                     do_datepicker = $('#date_picker').datepicker({
+                        uiLibrary: 'bootstrap4',
+                        format: 'yyyy-mm-dd'
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Date To <span class="text-red">*</span></label>
+            <div class="input-group input-group-flat">
+                <input id="date_picker_to" name="date_picker" readonly/>
+                <script>
+                    let do_today_to, do_datepicker_to;
+                    do_today_to = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+                    do_datepicker_to = $('#date_picker_to').datepicker({
                         uiLibrary: 'bootstrap4',
                         format: 'yyyy-mm-dd'
                     });
